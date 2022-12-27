@@ -61,15 +61,17 @@ const Weather = () => {
         </form>
         {data ? (
           <>
-            <h1>Today Weather Of {data.city}</h1>
-            <div className="data">
-              <span>Temp : {data.temp}</span>
-              <span>Humidity : {data.humidity}</span>
-              <span>Pressure : {data.pressure}</span>
-              <span>Temp-Min : {data.temp_min}</span>
-              <span>Temp-Max : {data.temp_max}</span>
-              <span>Wind-Speed : {data.speed}</span>
-              <span>Wind-Deg : {data.deg}</span>
+            <h1>Weather Of {data.city}</h1>
+            <div className="card w-25 mx-auto mt-4">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Temperature : {data.temp}</li>
+                <li className="list-group-item">Humidity : {data.humidity}</li>
+                <li className="list-group-item">Pressure : {data.pressure}</li>
+                <li className="list-group-item">Temp_min : {data.temp_min}</li>
+                <li className="list-group-item">Temp_max : {data.temp_max}</li>
+                <li className="list-group-item">Wind speed : {data.speed}</li>
+                <li className="list-group-item">Wind deg : {data.deg}</li>
+              </ul>
             </div>
           </>
         ) : (
