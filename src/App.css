@@ -1,5 +1,5 @@
-*{
-  background-color: #282c34;
+* {
+  background-color: #4f96bf;
   min-height: 1vh;
   color: white;
 }
@@ -30,7 +30,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #a6e6f8;
 }
 
 @keyframes App-logo-spin {
@@ -40,4 +40,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 31vw;
 }
